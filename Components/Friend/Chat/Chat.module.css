@@ -1,0 +1,92 @@
+
+.Chat{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-top: 0.3rem;
+    background-color: rgba(0,0,0,0.25);
+    border-radius: .5rem;
+    overflow-y: scroll;
+    border: #f5e1cb;
+    text-transform: capitalize;
+    border-style: groove;
+}
+
+.Chat_box{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 45vh;
+    width: 90%;
+    
+    
+    margin:  0 auto;
+    overflow-y: scroll;
+}
+
+.Chat_box_right p,
+.Chat_box_left p{
+    background-color: #03f17e5b;
+    padding: 0.5rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    position: relative;
+    margin: .4rem;
+    
+}
+
+.Chat_box_left_title{
+    display: flex;
+    align-items: center;
+    gap: .1rem;
+    font-size: 0.8rem;
+}
+
+.Chat_box_send_img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.Chat_box_send_img input{
+    width: 100%;
+    background-color: #b7d5b45b;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    
+    color: #ffffff;
+    border-radius: .5rem;
+}
+
+.Chat_user_info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid#f5e1cb;
+    
+    line-height: 1;
+}
+
+.Chat_user_info_box h4,
+.Chat_user_info_box p{
+    line-height: 0;
+}
+
+@media only screen and (max-width: 35em) {
+    .Chat{
+        padding: 1rem;
+    }
+
+    .Chat p{
+        font-size: .8rem;
+    }
+    .Chat small{
+        font-size: .8rem;
+    }
+
+    .show{
+        display: none;
+    }
+}
